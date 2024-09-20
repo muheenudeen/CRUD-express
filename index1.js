@@ -70,9 +70,9 @@ app.delete('/about/:id', async (req, res) => {
     if (!deletedNote) {
       return res.status(404).json({ error: "Note not found" });
     }
-    res.status(200).json({ message: "Note deleted successfully" });
+    res.status(200).json({ message:"Note deleted successfully" });
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ error: err.message});
   }
 });
 
